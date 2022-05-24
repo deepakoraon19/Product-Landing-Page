@@ -1,0 +1,27 @@
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.nav-bar{
+    align-items: center;
+}
+.nav{
+    font-weight: 400;
+    margin:2%;
+    
+}
+.titles{
+    height: 15vh;
+   
+    width: 80%;
+}
+.logos{
+    flex-direction: row-reverse;   
+    align-items: center;
+    width: 20%;
+ }
+ .cart{
+
+ }
+.profile{
+     width: 5vw;
+ }

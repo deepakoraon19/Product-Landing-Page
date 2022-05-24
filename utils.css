@@ -1,0 +1,8 @@
+.flex{
+    display:flex;    
+}
+hr{
+    border: none;
+    height: 1px;
+    background: rgb(177, 175, 175);
+}

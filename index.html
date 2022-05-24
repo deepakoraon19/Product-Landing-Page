@@ -1,44 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="utils.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav-bar flex">
+      <div class="titles flex">
+        <div class="nav logo">
+          <img src="./images/logo.svg" />
+        </div>
+        <div class="nav">Collections</div>
+        <div class="nav">Men</div>
+        <div class="nav">Women</div>
+        <div class="nav">About</div>
+        <div class="nav">Contact</div>
+      </div>
+      
+      <div class="logos flex">
+        <div class="nav cart">
+          <img src="./images/icon-cart.svg" />
+        </div>
+        <div class="nav">
+          <img class="profile nav" src="./images/image-avatar.png" />
+        </div>
+      </div>
+    </nav>
+    <hr />
+    <div class="flex container">
+      <div class="images">
+        <div>
+          <img class="center-img" src="./images/image-product-1.jpg">
+        </div>
+        <div class="bottom flex">
+          <img class="bottom-img" src="./images/image-product-1-thumbnail.jpg">
+          <img class="bottom-img" src="./images/image-product-1-thumbnail.jpg">
+          <img class="bottom-img" src="./images/image-product-1-thumbnail.jpg">
+          <img class="bottom-img" src="./images/image-product-1-thumbnail.jpg">
+        </div>
+      </div>
+      <div class="context">
+        <div class="">Sneaker Company</div>
+        <div class="">Fall Limited Edition Sneakers</div>
+        <div class="">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </div>
+        <div class="price">
+          <div class="">$125.00</div>
+          <div class="">50%</div>
+        </div>
+        <div class="">$250.00</div>
+        <div class="flex counter">
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+        </div>
+        <div class="">Add to cart</div>
+      </div>
+    </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Collections
-  Men
-  Women
-  About
-  Contact
-
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      0 
+  </body>
+  <script src="index.js"></script>
 </html>
