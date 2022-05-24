@@ -34,7 +34,7 @@
     </style>
   </head>
   <body>
-    <nav class="nav-bar flex">
+    <nav class="nav-bar flex align-items">
       <div class="titles flex">
         <div class="nav logo">
           <img src="./images/logo.svg" />
@@ -46,51 +46,58 @@
         <div class="nav">Contact</div>
       </div>
       
-      <div class="logos flex">
-        <div class="nav cart">
-          <img src="./images/icon-cart.svg" />
-        </div>
+      <div class="logos flex align-items">        
         <div class="nav">
           <img class="profile nav" src="./images/image-avatar.png" />
+        </div>
+        <div class="nav cart">
+          <img class="cart-img" src="./images/icon-cart.svg" />
         </div>
       </div>
     </nav>
     <hr />
     <div class="flex container">
-      <div class="images">
+      <div class="images ">
         <div>
-          <img class="center-img" src="./images/image-product-1.jpg">
+          <img class="center-img round-corner" src="./images/image-product-1.jpg">
         </div>
         <div class="bottom flex">
-          <img class="bottom-img" src="./images/image-product-1-thumbnail.jpg">
-          <img class="bottom-img" src="./images/image-product-1-thumbnail.jpg">
-          <img class="bottom-img" src="./images/image-product-1-thumbnail.jpg">
-          <img class="bottom-img" src="./images/image-product-1-thumbnail.jpg">
+          <img class="bottom-img round-corner" src="./images/image-product-1-thumbnail.jpg">
+          <img class="bottom-img round-corner" src="./images/image-product-1-thumbnail.jpg">
+          <img class="bottom-img round-corner" src="./images/image-product-1-thumbnail.jpg">
+          <img class="bottom-img round-corner" src="./images/image-product-1-thumbnail.jpg">
         </div>
       </div>
       <div class="context">
-        <div class="">Sneaker Company</div>
-        <div class="">Fall Limited Edition Sneakers</div>
-        <div class="">
+        <div class="brand orange weight-800">SNEAKER COMPANY </div>
+        <div class="head big weight-800">Fall Limited Edition Sneakers</div>
+        <div class="para grey">
           These low-profile sneakers are your perfect casual wear companion.
           Featuring a durable rubber outer sole, they’ll withstand everything
           the weather can offer.
         </div>
-        <div class="price">
-          <div class="">$125.00</div>
-          <div class="">50%</div>
+        <div class="flex">
+          <div class="price weight-800">$125.00</div>
+          <div class="dis flex round-corner orange justify-content align-items weight-800"><div>50%</div></div>
         </div>
-        <div class="">$250.00</div>
-        <div class="flex counter">
-          <div class=""></div>
-          <div class=""></div>
-          <div class=""></div>
+        <div class="strike">$250.00</div>
+        <div class="flex align-items">
+        <div class="flex counter round-corner align-items">
+          <div class="count-btn">
+            <img class="minus" src="./images/icon-minus.svg">
+          </div>
+          <div> <span class="count">0</span> </div>
+          <div class="count-btn">
+            <img class="plus" src="./images/icon-plus.svg">
+          </div>          
         </div>
-        <div class="">Add to cart</div>
+        <div class="add-cart round-corner"><span>Add to cart</span></div>
+      </div>
+        
       </div>
     </div>
 
-      0 
+     
   </body>
   <script src="index.js"></script>
 </html>

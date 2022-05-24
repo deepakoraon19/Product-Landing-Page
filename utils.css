@@ -5,4 +5,39 @@ hr{
     border: none;
     height: 1px;
     background: rgb(177, 175, 175);
+    margin-bottom: 2%;
+}
+.align-items{
+    align-items: center;
+}
+.justify-content{
+    justify-content: center;
+}
+.round-corner{
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+}
+.center-img{
+    width: 32vw;
+    margin-bottom: 3vh;
+    
+}
+.bottom-img{
+    width: 6vw;
+    margin:0 1vw;    
+}
+.orange{
+    color:hsl(26, 100%, 55%);
+}
+.grey{
+    color:hsl(0, 0%, 51%);
+}
+.big{
+    font-size: 3rem;
+}
+.weight-800{
+    font-weight: 800;
 }
