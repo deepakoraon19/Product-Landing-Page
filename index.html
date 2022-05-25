@@ -34,36 +34,52 @@
     </style>
   </head>
   <body>
-    <nav class="nav-bar flex align-items">
-      <div class="titles flex">
-        <div class="nav logo">
-          <img src="./images/logo.svg" />
+    <div class="overlay">
+      <div class="box flex align-items justify-content">
+        <div class="slide">
+          <img class="close-btn" src="./images/icon-close.svg">
+          <img class="overlay-img round-corner" src="./images/image-product-1.jpg">
+          <img class="overlay-img round-corner" src="./images/image-product-2.jpg">
+          <img class="overlay-img round-corner" src="./images/image-product-3.jpg">
+          <img class="overlay-img round-corner" src="./images/image-product-4.jpg">        
         </div>
-        <div class="nav">Collections</div>
-        <div class="nav">Men</div>
-        <div class="nav">Women</div>
-        <div class="nav">About</div>
-        <div class="nav">Contact</div>
       </div>
       
-      <div class="logos flex align-items">        
-        <div class="nav">
-          <img class="profile nav" src="./images/image-avatar.png" />
+    </div>
+    <nav class="nav-bar flex align-items">
+      <div class="titles flex ">
+        <div class="nav logo flex  align-items">
+          <img src="./images/logo.svg" />
+        </div>        
+        <div class="nav categories flex align-items"><span>Collections</span></div>
+        <div class="nav categories flex align-items"><span>Men</span></div>
+        <div class="nav categories flex align-items"><span>Women</span></div>
+        <div class="nav categories flex align-items"><span>About</span></div>
+        <div class="nav categories flex align-items"><span>Contact</span></div>
+      </div>
+      
+      <div class="logos flex align-items ">        
+        <div class="nav profile">
+          <img class="profile-img nav" src="./images/image-avatar.png" />
         </div>
         <div class="nav cart">
           <img class="cart-img" src="./images/icon-cart.svg" />
         </div>
       </div>
     </nav>
-    <div class="cart-float">
+    <div class="cart-float round-corner">
       <span>Cart</span>
       <hr>
-      <div class="cart-items">
-        <img class="item-img" src="./images/image-product-1-thumbnail.jpg">
-        <p>Fall Limited Edition Sneakers</p>
-        <p>fasaf</p>
+      <div class="items-list">
+      <div class="cart-items round-corner flex">
+        <img class="item-img round-corner" src="./images/image-product-1-thumbnail.jpg">
+        <div class="flex cart-desc">
+          <span>Fall Limited Edition Sneakers</span>
+          <span>fasaf</span>         
+        </div>
       </div>
-      <div class=""></div>
+    </div>
+      <div class="ckout round-corner"><span class="">Checkout</span></div>
       <div class=""></div>
     </div>
     <hr>   
@@ -71,6 +87,9 @@
       <div class="images ">
         <div>
           <img class="center-img round-corner" src="./images/image-product-1.jpg">
+          <img class="center-img round-corner" src="./images/image-product-2.jpg">
+          <img class="center-img round-corner" src="./images/image-product-3.jpg">
+          <img class="center-img round-corner" src="./images/image-product-4.jpg">
         </div>
         <div class="bottom flex">
           <img class="bottom-img round-corner" src="./images/image-product-1-thumbnail.jpg">
@@ -79,6 +98,7 @@
           <img class="bottom-img round-corner" src="./images/image-product-4-thumbnail.jpg">
         </div>
       </div>
+     
       <div class="context">
         <div class="brand orange weight-800">SNEAKER COMPANY </div>
         <div class="head big weight-800">Fall Limited Edition Sneakers</div>
@@ -108,7 +128,7 @@
       </div>
     </div>
 
-     
+    
   </body>
   <script src="index.js"></script>
 </html>

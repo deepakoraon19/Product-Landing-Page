@@ -1,13 +1,14 @@
 body{
-    font-family: 'Kumbh Sans', sans-serif;
- 
+    font-family: 'Kumbh Sans', sans-serif; 
+    margin:0;
 }
 .nav{
     font-weight: 400;
-    margin:2%;    
+    margin:0% 2%;    
+    height: 100%;    
 }
 .titles{
-    height: 10vh;   
+    height: 13vh;   
     width: 80%;
 }
 .logos{
@@ -19,10 +20,24 @@ body{
 }
 .cart-img{
     width: 2.5vw;
+}.profile{
+   
+    /* padding: 2%; */
 }
-.profile{
+.profile-img{
     width: 5vw;
-    margin-right: 4vw;     
+    margin-right: 4vw; 
+    /* margin-left: 2vw;   */
+    /* height: ;   */
+}
+.profile-img:hover{
+    border-radius: 100%;
+    width: 4.8vw;
+    border: 2px solid orange;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
 .container{
     padding:0 5vw;
@@ -79,6 +94,50 @@ body{
     width: 20%;
     z-index: 1;
     position: absolute;
-    right:0;
+    right:30px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgb(196, 194, 194);  
+    padding:2%;  
+    display: none;
+}
+.cart-desc{
+    flex-direction: column;
+}
+.ckout{
+    background-color: hsl(26, 100%, 55%);
+    color:white;
+    margin-top: 3%;
+    padding: 4% 4%;
+    text-align: center;
+}
+.categories:hover{  
+    border-bottom: 3px solid orange;
+    font-weight: 800;
+}
+.overlay{
+    z-index: 1;
+    position:absolute;
+    margin:auto;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: black;
+    opacity: 70%;    */
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+.slide{
+    width: 50%;
+}
+.overlay-img{
+    display: none; 
+    width: 40%;
+    margin:auto;
+}
+.close-btn{
+    margin:auto;
+}
+.box{
+    height: 100%;
+    /* width: 10%; */
 }
 

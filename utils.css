@@ -6,6 +6,7 @@ hr{
     height: 1px;
     background: rgb(177, 175, 175);
     margin-bottom: 2%;
+    margin-top: 0px;
     
 }
 .align-items{
@@ -24,7 +25,7 @@ hr{
 .center-img{
     width: 32vw;
     margin-bottom: 3vh;
-    
+    display:none;
 }
 .bottom-img{
     width: 6vw;
@@ -44,4 +45,10 @@ hr{
 }
 .item-img{
     width: 4vw;
+}
+.display{
+    display: block;
+}
+.blur{
+    opacity: 60%;
 }
