@@ -86,3 +86,9 @@ counterBtn()();
         </div>
       </div>
     </div> */}
+
+let cartItems = document.createElement("div")
+let cartImg = document.createElement("img")
+let cartDesc = document.createElement("span")
+let cartPrice = document.createElement("div")
+
