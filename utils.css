@@ -6,6 +6,7 @@ hr{
     height: 1px;
     background: rgb(177, 175, 175);
     margin-bottom: 2%;
+    
 }
 .align-items{
     align-items: center;
@@ -40,4 +41,7 @@ hr{
 }
 .weight-800{
     font-weight: 800;
+}
+.item-img{
+    width: 4vw;
 }
