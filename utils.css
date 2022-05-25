@@ -40,6 +40,9 @@ hr{
 .big{
     font-size: 3rem;
 }
+.none{
+    display: none;
+}
 .weight-800{
     font-weight: 800;
 }

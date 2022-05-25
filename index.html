@@ -36,13 +36,20 @@
   <body>
     <div class="overlay">
       <div class="box flex align-items justify-content">
-        <div class="slide">
+        <div class="slide flex align-items justify-content">
           <img class="close-btn" src="./images/icon-close.svg">
           <img class="overlay-img round-corner" src="./images/image-product-1.jpg">
           <img class="overlay-img round-corner" src="./images/image-product-2.jpg">
           <img class="overlay-img round-corner" src="./images/image-product-3.jpg">
-          <img class="overlay-img round-corner" src="./images/image-product-4.jpg">        
+          <img class="overlay-img round-corner" src="./images/image-product-4.jpg">  
+          <div class="bottom flex">
+            <img class="bottom-img round-corner" src="./images/image-product-1-thumbnail.jpg">
+            <img class="bottom-img round-corner" src="./images/image-product-2-thumbnail.jpg">
+            <img class="bottom-img round-corner" src="./images/image-product-3-thumbnail.jpg">
+            <img class="bottom-img round-corner" src="./images/image-product-4-thumbnail.jpg">
+          </div>      
         </div>
+        
       </div>
       
     </div>
@@ -63,20 +70,23 @@
           <img class="profile-img nav" src="./images/image-avatar.png" />
         </div>
         <div class="nav cart">
+          <div class="cart-count "><span class="cart-num weight-800"></span></div>
           <img class="cart-img" src="./images/icon-cart.svg" />
         </div>
       </div>
     </nav>
     <div class="cart-float round-corner">
-      <span>Cart</span>
-      <hr>
+      <span class="weight-800 carttxt">Cart</span>
+      <hr class="carthr">
       <div class="items-list">
-      <div class="cart-items round-corner flex">
+      <div class="cart-items round-corner flex align-items">
         <img class="item-img round-corner" src="./images/image-product-1-thumbnail.jpg">
-        <div class="flex cart-desc">
-          <span>Fall Limited Edition Sneakers</span>
-          <span class="grey cart-price"></span>         
-          <span class="grey total-price"></span>         
+        <div class="flex cart-desc ">
+          <span class="grey nametag">Fall Limited Edition Sneakers</span>
+          <div class="flex ">
+            <span class="grey cart-price"></span>         
+            <span class="weight-800 total-price"></span> 
+          </div>                  
         </div>
         <img class="delete" src="./images/icon-delete.svg">
       </div>

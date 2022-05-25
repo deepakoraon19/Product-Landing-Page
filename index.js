@@ -8,24 +8,39 @@ let centerImg  = document.querySelectorAll(".center-img")
 let bottomImg  = document.querySelectorAll(".bottom-img")
 let overlay = document.querySelector(".overlay")
 let overImg = document.querySelectorAll(".overlay-img")
-let closeBtn = document.querySelector("close-btn")
-
+let closeBtn = document.querySelector(".close-btn")
+let cartPrice = document.querySelector(".cart-price")
+let totalPrice = document.querySelector(".total-price")
+let cartCount = document.querySelector(".cart-count")
+let cartNum = document.querySelector(".cart-num")
+let deleteCart = document.querySelector(".delete")
+let itemsList = document.querySelector(".items-list")
 
 
 centerImg[0].classList.add("display")
 bottomImg[0].classList.add("blur")
 
+closeBtn.addEventListener('click',()=>{
+    overlay.classList.remove("display")
+})
+
+
 let imgChange = ()=>{
     for(let i=0;i<bottomImg.length;i++){
         bottomImg[i].addEventListener('click',()=>{
+            let j=i%4;
             centerImg.forEach((tag)=>{
                 tag.classList.remove("display");                
             })
             bottomImg.forEach((tag)=>{
                 tag.classList.remove("blur");               
             })
-            centerImg[i].classList.add("display");
-            bottomImg[i].classList.add("blur");
+            overImg.forEach((tag)=>{
+                tag.classList.remove("display");               
+            })
+            centerImg[j].classList.add("display");
+            overImg[j].classList.add("display")
+            bottomImg[j].classList.add("blur");
             
         })
     }
@@ -43,8 +58,11 @@ let slideImg = ()=>{
     }
 }
 
+
+
 let counterBtn = ()=>{
     let count=0;
+    let total=0;
     return ()=>{
         plusBtn.addEventListener('click',()=>{
             count++;
@@ -58,8 +76,26 @@ let counterBtn = ()=>{
             }
         })
 
+        addCart.addEventListener('click',()=>{
+             itemsList.classList.remove("none") 
+            total=total+count;
+            cartNum.textContent=total;
+            cartCount.classList.add("display")
+            cartPrice.innerHTML=`$125.00 x ${total} `
+            totalPrice.innerHTML=`$${total*125}`                      
+            count=0;
+            counterTxt.textContent=count;
+        })
+
+        deleteCart.addEventListener('click',()=>{
+            itemsList.classList.add("none")
+            total=0;
+            count=0;
+            cartNum.textContent=total;
+        })
+
         cartBtn.addEventListener('click',()=>{
-            if(count==0){
+            if(total!=0){
                 
             }
             if(!cartFloat.classList.contains("display")){
@@ -87,8 +123,8 @@ counterBtn()();
       </div>
     </div> */}
 
-let cartItems = document.createElement("div")
-let cartImg = document.createElement("img")
-let cartDesc = document.createElement("span")
-let cartPrice = document.createElement("div")
+// let cartItems = document.createElement("div")
+// let cartImg = document.createElement("img")
+// let cartDesc = document.createElement("span")
+// let cartPrice = document.createElement("div")
 
