@@ -33,14 +33,16 @@ let imgChange = ()=>{
                 tag.classList.remove("display");                
             })
             bottomImg.forEach((tag)=>{
-                tag.classList.remove("blur");               
+                tag.classList.remove("blur");
+                tag.classList.remove("border")               
             })
             overImg.forEach((tag)=>{
                 tag.classList.remove("display");               
             })
             centerImg[j].classList.add("display");
             overImg[j].classList.add("display")
-            bottomImg[j].classList.add("blur");
+            bottomImg[i].classList.add("blur");
+            bottomImg[i].classList.add("border")
             
         })
     }
@@ -52,7 +54,10 @@ let slideImg = ()=>{
         centerImg[i].addEventListener('click',()=>{
             overlay.classList.add("display")
             // closeBtn.classList.add("display")
-            overImg[0].classList.add("display")
+            overImg.forEach((tag)=>{
+                tag.classList.remove("display");               
+            })
+            overImg[i].classList.add("display")
 
         })
     }
